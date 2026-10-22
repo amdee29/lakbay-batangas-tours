@@ -62,7 +62,15 @@
 <br>
 <section id="why">
     <h2>WHY CHOOSE US</h2>
-    <p>Lakbay Batangas Tours is your top choice for travel experiences in the beautiful province of Batangas, Philippines.<br> You travel with ultimate peace of mind, knowing we always have your back.</p>
+    <p>Lakbay Batangas Tours is your top choice for travel experiences in the beautiful province of Batangas, Philippines.<br>
+        <ul>
+            <li>Expert local guides with in-depth knowledge of Batangas' history, culture, and natural wonders.</li>
+            <li>Customized tour packages to suit your preferences and interests.</li>
+            <li>Commitment to sustainable tourism practices that protect the environment and support local communities.</li>
+        </ul>
+    </p>
+
+
 </section>
 <br>
 <article id="packages">
@@ -88,9 +96,10 @@
     
 </article>
 <br>
-    <caption>Sample tour duration guide</caption>
+    
 
-<table>   
+<table>  
+    <caption>Sample tour duration guide</caption> 
 <thead>
     <tr>
         <th scope="col"> Tours </th>
@@ -138,18 +147,54 @@
    
  <p>For inquiries,please fill out the form below, and our team will get back to you as soon as possible.</p> 
     <h2>First Inquiry Form Control</h2>
-<form action="#contact" method="get">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name">
 
+<form action="#contact" method="get">
+    <label for="vistor-name">Your Name:</label>
+    <input id="vistor-name" type="text" name="vistor_name">
+<br>
+
+    <label for="visitor-email">Your Email:</label>
+    <input id="visitor-email" type="email" name="visitor_email">    
+
+</form>
+
+<label for="Tour (Required)">Tour (Required): </label>
+<select id="Tour (Required)" name="Fruit (Required)">
+    <option value="">-- Please Select a tour--</option>
+    <option value="Taal Heritage Tour">Anilao Deep-Sea Diving</option>
+    <option value="Taal Volcano Tour">Taal Volcano Tour</option>
+    <option value="Batangas Heritage Tour">Batangas Heritage Tour</option>
+</select>
 </section>
 
 <br>
+<br>
+<br>
 
+<label for="message (optional)">Message(Optional):</label>
+<textarea id="message (optional)" name="message" rows="3" cols="28"></textarea>
 
 <br>
+<br>
+<br>
+
+ <form>
+        <fieldset>
+                <legend>Preferred Demo Response</legend>
+                <input type="radio" id="email" name="response" value="email">
+                <label for="email">Email</label><br>
+            
+                <input type="radio" id="No Reply Needed" name="response" value="No Reply Needed">
+                <label for="No Reply Needed">No Reply Needed</label><br>
+        </fieldset>
+</form>
+
+<br>
+<br>    
+
+
 <footer>
-        <p>&copy; 2026 Lakbay Batangas Tours.
-             All rights reserved.</p>
+        <p>&copy; 2026 Lakbay Batangas Tours. All rights reserved.</p>
 </footer>
+
 
