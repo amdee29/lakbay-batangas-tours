@@ -1,5 +1,40 @@
 header {
-    background-color: #173546;
+    background-color: #4da0b4;
+    color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: line;
+    margin: 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: black;
+}
+nav ul {
+    color:white
+    adding:p 0;
+    display: flex;
+    list-style: square inside;
+    margin: 0 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(215, 239, 243);
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+section {
+    padding: 20px 8%;
 }
