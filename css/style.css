@@ -17,7 +17,7 @@ nav a:hover {
 }
 nav ul {
     color:white
-    adding:p 0;
+    adding:0;
     display: flex;
     list-style: square inside;
     margin: 0 10px;
@@ -32,9 +32,50 @@ body {
     line-height: 1.6;
 }
 p {
+    color: #333;
     font-size: 16px;
     margin-bottom: 15px;
 }
+section#home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#why {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    max-width: 100%;
+
+}
+figure {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
 section {
-    padding: 20px 8%;
+    padding: 20px 2%;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #4da0b4;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
