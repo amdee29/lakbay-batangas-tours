@@ -1,5 +1,5 @@
 header {
-    background-color: #4da0b4;
+    background-color: #104b5a;
     color: white;
     padding: 20px;
     display: flex;
@@ -16,23 +16,26 @@ nav a:hover {
     color: black;
 }
 nav ul {
-    color:white
-    adding:0;
+    color: white;
+    padding: 0;
     display: flex;
     list-style: square inside;
     margin: 0 10px;
 }
 
+
 body {
+    background-color: rgb(213, 247, 247);
     font-family: Arial, sans-serif;
-    background-color: rgb(215, 239, 243);
-    color: #222;
+    color: #120061;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
+    
+
 p {
-    color: #333;
+    color: #120061;
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -63,6 +66,8 @@ img {
     max-width: 100%;
 
 }
+
+
 figure {
     text-align: center;
     font-style: italic;
@@ -72,10 +77,15 @@ section {
     padding: 20px 2%;
 }
 
+
 footer {
     margin-top: 30px;
-    background-color: #4da0b4;
+    background-color: #104b5a;
     color: white;
     text-align: center;
     width: 100%;
+}
+article h3 {
+background-color: palegoldenrod;
+
 }
