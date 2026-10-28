@@ -22,7 +22,10 @@ nav ul {
     list-style: square inside;
     margin: 0 10px;
 }
+nav ul:hover {
+    color: black;
 
+}
 
 body {
     background-color: rgb(213, 247, 247);
@@ -64,7 +67,6 @@ img {
     margin: 0 auto;
     width: 380px;
     max-width: 100%;
-
 }
 
 
@@ -81,11 +83,25 @@ section {
 footer {
     margin-top: 30px;
     background-color: #104b5a;
-    color: white;
+    color: rgb(255, 253, 253);
     text-align: center;
     width: 100%;
+}
+footer p {
+    color: ghostwhite;
 }
 article h3 {
 background-color: palegoldenrod;
 
+}
+
+
+:focus-visible {
+    outline: 2px solid #04eff7;
+    outline-offset: 3px;
+    background-color: rgb(145, 230, 252);
+}
+
+a:hover {
+    color:black
 }
