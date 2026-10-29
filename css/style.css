@@ -69,7 +69,6 @@ img {
     max-width: 100%;
 }
 
-
 figure {
     text-align: center;
     font-style: italic;
@@ -105,3 +104,136 @@ background-color: palegoldenrod;
 a:hover {
     color:black
 }
+
+/* Universal sizing affects the whole document. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+main {
+width: 90%;
+max-width: 1000px;
+margin-inline: auto;
+}
+
+header, footer { 
+    padding: 24px;
+ }
+
+section { 
+    min-width: 0; 
+}
+/* Check both desktop and narrow screens. */
+
+
+section {
+    padding: 20px;
+    margin-block: 20px;
+}
+
+article { 
+    padding: 16px; 
+}
+article + article {
+     margin-top: 16px;
+}
+
+figure { 
+    margin: 16px 0; 
+}
+
+figure img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+figcaption { 
+    margin-top: 8px; }
+
+form { 
+    max-width: 680px; 
+}
+input, select, textarea {
+max-width: 100%;
+font: inherit;
+}
+input:not([type="radio"]) { 
+    width: 100%; 
+}
+textarea { 
+    width: 100%; 
+}
+
+@media screen and (max-width: 480px)
+
+body {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        color: white;
+    text-decoration: line;
+    margin: 10px;
+    font-weight: bold;
+    }
+    h2 {
+        font-size: 23px;
+    }
+
+    #home {
+        min-height: 200px;
+        padding: 35px 15px;
+    }
+
+    #home h2 {
+        font-size: 25px;
+    }
+
+    #home p {
+        font-size: 15px;
+    }
+
+    #about figure {
+        width: 100%;
+    }
+
+    .package {
+        padding: 16px;
+        margin-bottom: 18px;
+    }
+
+    .package h3 {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .package a {
+        width: 100%;
+        text-align: center;
+    }
