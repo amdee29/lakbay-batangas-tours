@@ -1,30 +1,20 @@
-header {
-    background-color: #104b5a;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+nav {
+  position: sticky;
+  background-color: #104b5a;
+  color: white;
+  z-index: 1000;
+  text-align: center;
 }
 nav a {
     color: white;
-    text-decoration: line;
-    margin: 10px;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
 }
 nav a:hover {
     color: black;
-}
-nav ul {
-    color: white;
-    padding: 0;
-    display: flex;
-    list-style: square inside;
-    margin: 0 10px;
-}
-nav ul:hover {
-    color: black;
-
 }
 
 body {
@@ -38,9 +28,9 @@ body {
     
 
 p {
-    color: #120061;
+    color: #000000;
     font-size: 16px;
-    margin-bottom: 15px;
+
 }
 section#home {
     align-items: center;
@@ -78,162 +68,105 @@ section {
     padding: 20px 2%;
 }
 
-
 footer {
-    margin-top: 30px;
-    background-color: #104b5a;
-    color: rgb(255, 253, 253);
+    color: white;
     text-align: center;
-    width: 100%;
-}
-footer p {
-    color: ghostwhite;
-}
-article h3 {
-background-color: palegoldenrod;
-
-}
-
-
-:focus-visible {
-    outline: 2px solid #04eff7;
-    outline-offset: 3px;
-    background-color: rgb(145, 230, 252);
-}
-
-a:hover {
-    color:black
-}
-
-/* Universal sizing affects the whole document. */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
+    padding: 10px 0;
     margin: 0;
+    background-color:#104b5a;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #91cccc;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+thead {
+    background-color:#104b5a;
+    color: white;
+}
+table a {
+    color:#104b5a;
 }
 
 
-main {
-width: 90%;
-max-width: 1000px;
-margin-inline: auto;
+.container{
+  display: grid;
+  border: 2px solid #034d36;
+  padding: 12px;
+  flex-direction: row;
+  gap: 16px;
+  min-height: 180px;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-header, footer { 
-    padding: 24px;
- }
-
-section { 
-    min-width: 0; 
-}
-/* Check both desktop and narrow screens. */
-
-
-section {
-    padding: 20px;
-    margin-block: 20px;
+#packages1{
+    border: 2px solid #72e4ec;
 }
 
-article { 
-    padding: 16px; 
-}
-article + article {
-     margin-top: 16px;
-}
+.highlight{
+    position: relative;
+    background-color: #6ecece;
+    grid-column: span 2;
 
-figure { 
-    margin: 16px 0; 
 }
 
-figure img {
-display: block;
-max-width: 100%;
-height: auto;
-}
-figcaption { 
-    margin-top: 8px; }
 
-form { 
-    max-width: 680px; 
-}
-input, select, textarea {
-max-width: 100%;
-font: inherit;
-}
-input:not([type="radio"]) { 
-    width: 100%; 
-}
-textarea { 
-    width: 100%; 
+#featured {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color:rgb(160, 234, 236);
+    border-radius: 4px;
 }
 
-@media screen and (max-width: 480px)
+#why {
+    padding:15px;
+    border:2px solid #010303;
+    background-color: #bfecec;
+    font-style: sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(23, 218, 202, 0.793);
+}
 
-body {
-        font-size: 15px;
-        line-height: 1.6;
-    }
+#contact{
+    padding:15px;
+    border:2px solid #000000;
+    background-color: #a0f1fc;
+    font-style: sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(206, 235, 139, 0.793);
 
-    main {
-        width: 92%;
-    }
+}
+#contact p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+}
 
-    header {
-        padding: 20px 12px;
-    }
+#main-navigation {
+    position: sticky;
+    top: 0;
+    background-color: #104b5a;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+}
 
-    header h1 {
-        font-size: 23px;
-        letter-spacing: 0.5px;
-        margin-bottom: 15px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    nav a {
-        color: white;
-    text-decoration: line;
-    margin: 10px;
-    font-weight: bold;
-    }
-    h2 {
-        font-size: 23px;
-    }
-
-    #home {
-        min-height: 200px;
-        padding: 35px 15px;
-    }
-
-    #home h2 {
-        font-size: 25px;
-    }
-
-    #home p {
-        font-size: 15px;
-    }
-
-    #about figure {
-        width: 100%;
-    }
-
-    .package {
-        padding: 16px;
-        margin-bottom: 18px;
-    }
-
-    .package h3 {
-        font-size: 18px;
-        padding: 12px;
-    }
-
-    .package a {
-        width: 100%;
-        text-align: center;
-    }
+#header {
+    background-color: #104b5a;
+    color: white;
+    border: 1px solid #104b5a;
+}
